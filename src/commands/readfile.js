@@ -1,7 +1,8 @@
+/*
 module.exports = {
-	name: 'readfile',
-	description: 'alexandra_ reads from a text file',
-	execute(message, args) {
+  name: 'readfile',
+  description: 'alexandra_ reads from a text file',
+  execute(message, args) {
 
         const {PythonShell} = require('python-shell');
         let pyshell = new PythonShell('./src/pycode/readfile.py');
@@ -23,3 +24,4 @@ module.exports = {
 
     },
 };
+*/
