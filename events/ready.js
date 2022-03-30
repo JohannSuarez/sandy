@@ -1,15 +1,19 @@
-const userLog = require('../include/csv_logging.js')
+const userLog = require("../include/csv_logging.js");
 
 module.exports = {
-	name: 'ready',
-	once: true,
-	execute(client) {
-		console.log(`Ready! Logged in as ${client.user.tag}`);
-		setInterval(() => {
+  name: "ready",
+  once: true,
+  execute(client) {
+    console.log(`Ready! Logged in as ${client.user.tag}`);
 
-			userLog.logVoiceChannels(client.channels);
-			console.log(client.channels)
+    client.user.setPresence({
+      activities: [{ name: "Office Management 101" }],
+      status: "online",
+    });
 
-		}, 60000); // 600 seconds
-	}
-}
+    setInterval(() => {
+      userLog.logVoiceChannels(client.channels);
+      console.log(client.channels);
+    }, 60000); // 600 seconds
+  },
+};

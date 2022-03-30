@@ -12,3 +12,4 @@ config.json
 utilities/outputs/
 data
 data/
+*csv

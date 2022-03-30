@@ -1,7 +1,7 @@
 {
-  "name": "alexandra",
+  "name": "duane",
   "version": "2.0.0",
-  "description": "Alexandra for DiscordJS v.13",
+  "description": "duane bot for defi-debauchery",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JohannSuarez/alexandra.git"
+    "url": "git+https://github.com/bob/alexandra.git"
   },
   "keywords": [
     "discord",
@@ -18,12 +18,12 @@
     "node",
     "api"
   ],
-  "author": "Johann Suarez",
+  "author": "anon",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JohannSuarez/alexandra/issues"
+    "url": "https://github.com/foo/bar/issues"
   },
-  "homepage": "https://github.com/JohannSuarez/alexandra#readme",
+  "homepage": "https://github.com/bob/duane#readme",
   "dependencies": {
     "@discordjs/builders": "^0.12.0",
     "@discordjs/rest": "^0.3.0",
