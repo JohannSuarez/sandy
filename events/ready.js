@@ -1,5 +1,8 @@
 const userLog = require("../include/csv_logging.js");
 
+// TO DO: Goes "offline" after 5pm. Goes back online at 9am
+// Goes offline at random intervals through the day for at most 30 mins
+
 module.exports = {
   name: "ready",
   once: true,
@@ -12,8 +15,16 @@ module.exports = {
     });
 
     setInterval(() => {
-      userLog.logVoiceChannels(client.channels);
+
+      let hour = new Date().getHours();
+      if (hour >= 17 || hour <= 9) {
+
+        console.log("Duane sleeps...");
+        client.user.setStatus('invisible');
+      }
+
+      // userLog.logVoiceChannels(client.channels);
       console.log(client.channels);
-    }, 60000); // 600 seconds
+    }, 60000); // 60 seconds
   },
 };
