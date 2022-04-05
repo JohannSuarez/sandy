@@ -17,11 +17,15 @@ module.exports = {
     setInterval(() => {
 
       let hour = new Date().getHours();
+
       if (hour >= 17 || hour <= 9) {
 
         console.log("Duane sleeps...");
         client.user.setStatus('invisible');
+      } else {
+        client.user.setStatus('online');
       }
+
 
       // userLog.logVoiceChannels(client.channels);
       console.log(client.channels);
